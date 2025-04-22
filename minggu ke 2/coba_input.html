@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="username"> type "text" :</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="password"> type "password" :</label><br>
+    <input type="password" id="password" name="password"><br>
+
+    <br>
+    <hr>
+    <h3>Uji Coba 2</h3>
+    <input type="radio" name="html" id="html" value="HTML"> <label for="html">HTML</label>
+    <input type="radio" name="css" id="css" value="CSS"> <label for="css">css</label>
+    <input type="radio" name="javascript" id="javascript" value="Javascript"> <label for="javascript">javascript</label>
+    <p>Jika name sama, hanya satu pilihan yang bisa dipilih. Jika berbeda atau tidak ada, setiap opsi bisa dipilih secara independen.</p>
+
+    <hr>
+    <h3>Uji Coba 3</h3>
+    <input type="checkbox" name="ef" id="id1" value="bike"> 
+    <label for="id1">i have a bike</label><br>
+    <input type="checkbox" name="as" id="id2" value="car"> 
+    <label for="id2">i have a car</label><br>
+    <input type="checkbox" name="sa" id="id3" value="boat"> 
+    <label for="id3">i have a boat</label>
+    <p>
+        Atribut name pada checkbox tidak mempengaruhi cara pemilihannya, karena checkbox memungkinkan pemilihan lebih dari satu opsi secara bersamaan.
+    </p>
+
+    <hr>
+    <h3>Uji coba 4</h3>
+    <label for="favcolor">Pilih warna dengan type "color":</label>
+    <input type="color" id="favcolor" name="favcolor"><br>
+
+    <label for="b">Pilih tanggal dengan type "date":</label>
+    <input type="date" id="b" name="tanggal"><br>
+
+    <input type="button" onclick="alert('Hello World')" value="click me!"><br>
+    <p>Ketika tombol "click me!" ditekan, muncul pesan "Hello World" dalam kotak dialog (alert).</p>
+
+    <hr>
+    <h3>Uji coba 5</h3>
+
+    <label for="birthdatetime">Input dengan type datetime-local:</label>
+    <input type="datetime-local" id="birthdatetime" name="birthdatetime"><br>
+
+    <label for="bdaymonth">Input dengan type month:</label>
+    <input type="month" id="bdaymonth" name="bdaymonth"><br>
+
+    <label for="email">Enter your email:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <p>Beberapa tipe input tidak sepenuhnya didukung di semua browser. datetime-local dan month mungkin tampil berbeda, terutama di Firefox</p>
+
+    <hr>
+    <h3>Uji coba 6</h3>
+    <input type="image" src="../gambar/gambar2.png" alt="Submit" width="48" height="48"><br>
+    <label for="myfile">Pilih file:</label>
+    <input type="file" id="myfile" name="myfile"><br><br>
+    <input type="hidden" id="custid" name="custid" value="3487"><br><br>
+    <p id="kesimpulan6">Semua tipe input bekerja sesuai fungsinya di browser modern. hidden tidak terlihat, tetapi berguna untuk penyimpanan data.</p>
+
+    <hr>
+    <h3>Uji coba 7</h3>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5"><br><br>
+
+    <label for="vol">Volume (between 0 and 50):</label>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br><br>
+
+    <p id="kesimpulan7">Browser dapat menerapkan batas min dan max</p>
+
+    <hr>
+    <h3>Uji coba 8</h3>
+    <label for="homepage">Add your homepage:</label>
+    <input type="url" id="homepage" name="homepage"><br><br>
+
+    <label for="gsearch">Search Google:</label>
+    <input type="search" id="gsearch" name="gsearch"><br><br>
+
+    <label for="phone">Enter your phone number:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+
+    <p id="kesimpulan8">Input url hanya menerima format alamat web yang valid, search bekerja seperti input teks biasa tetapi lebih optimal di perangkat tertentu, dan tel mengikuti pola tertentu namun tidak semua browser memberikan peringatan jika format salah.</p>
+
+
+
+
+    
+</body>
+</html>

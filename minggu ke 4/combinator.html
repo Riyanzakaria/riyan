@@ -1,0 +1,32 @@
+<!-- combinator.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selector</title>
+    <style>
+        div p { /* no 1 */
+            color: red;
+        }
+        div > p { /* no 2 */
+            background-color: yellow;
+        }
+        div + p { /* no 3 */
+            background-color: darkgray;
+        }
+        div ~ p { /* no 4 */
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinator Selector</h1>
+    <div>
+        <p>This is a paragraph. Semua p di dalam div berwarna merah.</p>
+        <p>This is a paragraph. Hanya p anak langsung div berlatar kuning.</p>
+    </div>
+    <p>This is a paragraph. Elemen p pertama yang langsung mengikuti elemen div dalam struktur HTML akan memiliki latar belakang berwarna abu-abu.</p>
+    <p>This is a paragraph. Semua elemen p yang berada setelah elemen div dalam level yang sama (bersaudara) akan memiliki warna teks cyan.</p>
+</body>
+</html>

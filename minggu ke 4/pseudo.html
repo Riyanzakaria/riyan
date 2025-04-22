@@ -1,0 +1,31 @@
+<!-- pseudo-class.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class Selector</title>
+    <style>
+        p {
+            display: none;
+            background-color: darkgray;
+            padding: 20px;
+        }
+        div:hover p { /* :hover adalah CSS Pseudo Class */
+            display: block;
+        }
+        a:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Class Selector</h1>
+    <div>
+        <span>Letakkan kursor <strong>disini</strong> untuk melihat div elemen</span>
+        <p>Saya adalah elemen p</p>
+    </div>
+    <br>
+    <a href="#">Arahkan mouse ke sini untuk mengubah warna link</a>
+</body>
+</html>

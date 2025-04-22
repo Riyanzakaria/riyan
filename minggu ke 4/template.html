@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website CSS Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #003399;
+            color: yellow;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .sub-header {
+            color: white;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .menu {
+            border: 2px dashed black;
+            width: 200px;
+            padding: 10px;
+        }
+        .menu a {
+            display: block;
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            font-weight: normal;
+        }
+        .menu a:hover {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .content {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+        }
+        .content img {
+            width: 100px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .description {
+            color: red;
+            font-size: 14px;
+        }
+        .footer {
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        Halo CSS !
+        <div class="sub-header">Ini adalah website CSS saya</div>
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <a href="#">Menu 1</a>
+            <a href="#">Menu 2</a>
+            <a href="#">Menu 3</a>
+            <a href="#">Menu 4</a>
+            <a href="#">Menu 5</a>
+            <a href="#"><b>Menu 6</b></a>
+        </div>
+
+        <div class="content">
+            <img src="../gambar/PNM.png" alt="Logo">
+            <div class="title">TI<br>Politeknik Negeri Madiun</div>
+            <div class="description">
+                Mewujudkan pendidikan tinggi vokasi dalam bidang Teknologi Informasi dan penerapannya yang berkualitas,
+                inovatif dan berdaya saing Nasional.
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Riyan Zakaria Z | 24431058 | TRPL-2B
+    </div>
+
+</body>
+</html>

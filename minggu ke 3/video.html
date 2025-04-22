@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Halaman Beranda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Riyan Zakaria Zulkarnain">
+  <meta name="nim" content="244311058">
+  <style>
+    * {
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      header {
+        background-color: #666;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+      
+      nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* hanya untuk demonstrasi, bisa disesuaikan */
+        background: #ccc;
+        padding: 20px;
+      }
+      
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 100%; /* hanya untuk demonstrasi, bisa disesuaikan */
+      }
+      
+      section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      
+      @media (max-width: 600px) {
+        article {
+          width: 100%;
+          height: auto;
+        }
+      }      
+  </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Website</h2>
+    </header>
+
+  <section>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gambar.html">Gambar</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="audio.html">Audio</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="canvas.html">Canvas</a></li>
+        </ul>
+    
+        
+    
+    </nav>
+    
+    <!-- Konten Utama (Artikel) -->
+    <article>
+     <video width="300px" height="300px" controls>
+        <source src="../gambar/video/Skateboard.mp4" type="video/mp4">
+        browser tidak mendukung
+     </video>
+     <iframe width="420" height="315" src="https://www.youtube.com/embed/fn3KWM1kuAw">
+    </iframe>
+    </article>
+  </section>
+  <div class="kesimpulan">
+
+      <h2>Kesimpulan</h2>
+      <p>
+        Kode HTML ini menampilkan artikel dengan judul "Video" yang berisi dua elemen video. Video
+        pertama adalah video lokal "Skateboard.mp4" yang diputar otomatis. Video kedua adalah video YouTube yang di-embed menggunakan tag
+        "iframe" dengan ukuran yang sama. Artikel ini menyediakan cara untuk menampilkan video
+        lokal dan video dari platform lain seperti YouTube dalam halaman web.
+    </p>
+    <p><strong>Nama:</strong> Riyan Zakaria Zulkarnain</p>
+    <p><strong>NIM:</strong>244311058</p>
+    
+</div>
+  <footer>
+  <p>footer</p>
+  </footer>
+</body>
+</html>

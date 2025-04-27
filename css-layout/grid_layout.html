@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar CSS Grid</title>
+    <style>
+        .tempat_grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-gap: 50px;
+            }
+
+        .item_grid {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tampilan:</h1>
+    <div class="tempat_grid">
+        <div class="item_grid">1</div>
+        <div class="item_grid">2</div>
+        <div class="item_grid">3</div>
+        <div class="item_grid">4</div>
+        <div class="item_grid">5</div>
+        <div class="item_grid">6</div>
+        <div class="item_grid">7</div>
+        <div class="item_grid">8</div>
+        <div class="item_grid">9</div>
+    </div>
+    <br>
+    <div>Kesimpulan Skenario 1: Menggunakan display grid sebagai penyusun layout, menerapkan grid-template-columns sebanyak 3 kali (auto auto auto) yang mana akan membuat 3 kolom menyamping.</div>
+    <div>Kesimpulan Skenario 2: Mengubah display grid menjadi inline grid</div>
+    <div>Kesimpulan Skenario 3: grid-column-gap menambahkan jarak antar kolom atau secara horizontal, grid-row-gap menambahkan jarak antar baris atau secara vertikal.</div>
+    <div>Kesimpulan Skenario 4: grid-gap menambah jarak antar baris dan kolom sekaligus.</div>
+</body>
+</html>

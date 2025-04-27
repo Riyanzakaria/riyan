@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            background-color: blanchedalmond;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+        .wadah_flex > div {
+            background-color: brown;
+            padding: 12px;
+            margin: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+    </div>
+
+    <p>Kesimpulan skenario 1: saat saya menambahkan background-color pada wadah_flex maka container/div yang menampung akan berubah warna.</p>
+    <p>Kesimpulan skenario 2: waktu saya menambahkan background-color pada wadah_flex > div beserta property lainnya otomatis div yang berada dalam container tersebut akan memiliki warna latar belakang juga, serta membuat jarak dari masing-masing div karena property margin, box juga bertambah luas karena adanya padding, dan ukuran font menjadi lebih besar.</p>
+    <p>Kesimpulan skenario 3: saat flex-direction diatur menjadi column maka susunan box yang ada dalam wadah_flex akan tersusun secara vertikal seperti kolom.</p>
+    <p>Kesimpulan skenario 4: saat flex-wrap diatur menjadi wrap maka jika lebar halaman disusutkan element yang ada pada wadah flex akan otomatis bergeser kebawah.</p>
+    <p>Kesimpulan skenario 5: secara fungsional sama dengan skenario 4.</p>
+    <p>Kesimpulan skenario 6: saya menambahkan justify-content dengan nilai center yang mana akan mengatur box yang ada pada wadah_flex untuk berada di tengah.</p>
+</body>
+</html>
